@@ -1,49 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link href="styles.css" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Header -->
-    <header id="header">
-        <div class="container">
-            <h1>Mi Portafolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre Mí</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sell.html">Vender</a>
+          </li>
+          <li class="nav-item">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="jumbotron text-center"></div>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm custom-card cursor-active" id="autos">
+              <img class="bd-placeholder-img card-img-top" src="img/cars_index.jpg"
+                alt="Imgagen representativa de la categoría 'Autos'">
+              <h3 class="m-3">Autos</h3>
+              <div class="card-body">
+                <p class="card-text">Los mejores precios en autos 0 kilómetro, de alta y media gama.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm custom-card cursor-active" id="juguetes">
+              <img class="bd-placeholder-img card-img-top" src="img/toys_index.jpg"
+                alt="Imgagen representativa de la categoría 'Juguetes'">
+              <h3 class="m-3">Juguetes</h3>
+              <div class="card-body">
+                <p class="card-text">Encuentra aquí los mejores precios para niños/as de cualquier edad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm custom-card cursor-active" id="muebles">
+              <img class="bd-placeholder-img card-img-top" src="img/furniture_index.jpg"
+                alt="Imgagen representativa de la categoría 'Muebles'">
+              <h3 class="m-3">Muebles</h3>
+              <div class="card-body">
+                <p class="card-text">Muebles antiguos, nuevos y para ser armados por uno mismo.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
-
-    <!-- About -->
-    <section id="about">
-        <div class="container">
-            <h2>Sobre Mí</h2> <br>
-            <p>Soy <strong class="name">Mayte Videla</strong> <br> Estudiante en Desarrollo Web.</p>
-            <img src="https://atrevete.pe/wp-content/uploads/2020/05/web-informativa-prueba-1.gif" alt="Imagen de Sobre Mí" class="profile-img">
-            <p> Hace cinco meses, comencé la experiencia de <a href="https://jovenesaprogramar.edu.uy/">Jóvenes a Programar</a> sin tener ni la más mínima idea de qué significaba realmente programar ni qué implicaba ser una desarrolladora web. Era casi como un plan B para la carrera que estudio en Udelar (Antropología), que ya me tenía llena de dudas y con varios exámenes acumulados.</p> <br>
-            <p>Decidí empezar algo nuevo, movida por la curiosidad, o tal vez por una necesidad de cambiar de aires. Todo este cumulo de decisiones y acciones causo que hoy, tenga un par de dolores de cabeza, pero con gran satisfacción de aprender nuevas herramientas y habilidades para mi vida cotidiana y por supuesto para una futura vida laboral.</p>
-
+        <div class="row">
+          <a class="btn btn-light btn-lg btn-block" href="categories.html">Y mucho más!</a>
         </div>
-    </section>
-
-   
-    <!-- Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Si deseas ponerte en contacto conmigo, puedes enviarme un correo a <a href="maytevidelacollado2005@gmail.com">maytevidelacollado2005@gmail.com</a>.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="container">
-            <p>&copy; 2024 Mayte Videla. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+      </div>
+    </div>
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/init.js"></script>
 </body>
+
 </html>
